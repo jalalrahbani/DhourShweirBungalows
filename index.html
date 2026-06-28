@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DhourShweirBungalows | Mountain Cabin Booking</title>
+  <meta name="description" content="Book private mountain bungalows in Dhour El Shweir, Lebanon. Check availability for B1, B2, and B3, choose 24-hour stay or day use, and send a booking request online." />
+  <meta property="og:title" content="DhourShweirBungalows" />
+  <meta property="og:description" content="Private mountain bungalows surrounded by pine trees and fresh air in Dhour El Shweir, Lebanon." />
+  <meta property="og:image" content="assets/hero.jpg" />
+  <meta name="theme-color" content="#193324" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="DhourShweirBungalows home">
+        <img src="assets/logo.png" alt="DhourShweirBungalows logo" class="brand-logo" />
+        <span>DhourShweirBungalows</span>
+      </a>
+      <button class="mobile-menu-button" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#bungalows">Bungalows</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Book</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-mist mist-one"></div>
+      <div class="hero-mist mist-two"></div>
+      <div class="container hero-layout">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Dhour El Shweir, Lebanon</p>
+          <h1>Wake up between pine trees, fresh air, and mountain silence.</h1>
+          <p class="hero-text">Private wooden bungalows for overnight escapes and strict 8-hour day use. Check the calendars, submit a request, then confirm with full Whish payment.</p>
+          <div class="hero-actions">
+            <a href="#booking" class="button primary">Start Booking Request</a>
+            <a href="https://www.instagram.com/dhourshweirbungalows/" target="_blank" rel="noopener noreferrer" class="button secondary"><i class="fa-brands fa-instagram"></i> View Instagram</a>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal delay-1" aria-label="Quick pricing">
+          <div class="hero-card-top">
+            <span>Summer rates</span>
+            <i class="fa-solid fa-mountain-sun"></i>
+          </div>
+          <div class="mini-rate"><span>B1</span><strong>$100</strong><em>/ 24h</em></div>
+          <div class="mini-rate"><span>B2</span><strong>$150</strong><em>/ 24h</em></div>
+          <div class="mini-rate"><span>B3</span><strong>$200</strong><em>/ 24h</em></div>
+          <div class="mini-note">Day use available for strict 8-hour stays.</div>
+        </aside>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="intro-section">
+      <div class="container intro-grid">
+        <div class="reveal">
+          <p class="section-label">Simple booking system</p>
+          <h2>Beautiful for guests. Easy for you to manage.</h2>
+        </div>
+        <div class="intro-copy reveal delay-1">
+          <p>Guests choose a bungalow, check your live availability calendar, and submit a request. The request is saved in your Google Sheet so you can track bookings and later extract monthly P&amp;L.</p>
+          <p class="holiday-note"><strong>Important:</strong> Christmas Eve and New Year’s Eve are not included in the standard prices and are quoted separately.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="bungalows" class="bungalows-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Our bungalows</p>
+          <h2>Choose the stay that fits your group.</h2>
+          <p>All prices are in USD. Overnight stays are priced per 24 hours. Day use is strictly limited to 8 hours.</p>
+        </div>
+
+        <div class="bungalow-grid">
+          <article class="bungalow-card reveal">
+            <div class="image-frame">
+              <img src="assets/b1.jpg" alt="B1 Cozy & Intimate bungalow" />
+              <span class="image-badge">Cozy escape</span>
+            </div>
+            <div class="card-body">
+              <div class="card-topline">
+                <h3>B1 – Cozy & Intimate</h3>
+                <span class="capacity"><i class="fa-solid fa-user-group"></i> 1–2 guests</span>
+              </div>
+              <p>B1 is the small, intimate bungalow for couples or quiet solo stays. It has a warm mountain feel and a wood heater for winter nights.</p>
+              <div class="pricing-box">
+                <div><span>24-hour stay</span><strong>$100</strong></div>
+                <div><span>Day use, 8 hours</span><strong>$100</strong></div>
+              </div>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-fire"></i> Wood heater in winter</li>
+                <li><i class="fa-solid fa-shower"></i> Private bathroom with shower</li>
+                <li><i class="fa-solid fa-couch"></i> Sofa bed and loft mattresses</li>
+                <li><i class="fa-solid fa-kitchen-set"></i> Kitchenette basics</li>
+              </ul>
+              <button class="button card-button" onclick="openBooking('b1')">Check Availability & Book</button>
+            </div>
+          </article>
+
+          <article class="bungalow-card featured-card reveal delay-1">
+            <div class="image-frame">
+              <img src="assets/b2.jpg" alt="B2 Family-friendly Comfort bungalow" />
+              <span class="image-badge">Family comfort</span>
+            </div>
+            <div class="card-body">
+              <div class="card-topline">
+                <h3>B2 – Family-friendly Comfort</h3>
+                <span class="capacity"><i class="fa-solid fa-users"></i> 2–4 guests</span>
+              </div>
+              <p>B2 is a comfortable medium bungalow for small families, couples, or friends who want more indoor space while staying close to nature.</p>
+              <div class="pricing-box">
+                <div><span>24-hour stay</span><strong>$150</strong></div>
+                <div><span>Day use, 8 hours</span><strong>$110</strong></div>
+              </div>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-temperature-half"></i> AC with heating/cooling</li>
+                <li><i class="fa-solid fa-shower"></i> Private bathroom with shower</li>
+                <li><i class="fa-solid fa-tv"></i> TV, desk, and storage cabinet</li>
+                <li><i class="fa-solid fa-chair"></i> Outdoor seating with lounging chairs</li>
+              </ul>
+              <button class="button card-button" onclick="openBooking('b2')">Check Availability & Book</button>
+            </div>
+          </article>
+
+          <article class="bungalow-card reveal delay-2">
+            <div class="image-frame">
+              <img src="assets/b3.jpg" alt="B3 Spacious Luxury bungalow with private pool in summer" />
+              <span class="image-badge">Private pool in summer</span>
+            </div>
+            <div class="card-body">
+              <div class="card-topline">
+                <h3>B3 – Spacious Luxury</h3>
+                <span class="capacity"><i class="fa-solid fa-people-group"></i> 4–6 guests</span>
+              </div>
+              <p>B3 is the large bungalow for families and groups. It includes more space, a private outdoor setting, and its own private pool during summer.</p>
+              <div class="pricing-box">
+                <div><span>24-hour stay</span><strong>$200</strong></div>
+                <div><span>Day use, 8 hours</span><strong>$150</strong></div>
+              </div>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-water-ladder"></i> Private pool in summer only</li>
+                <li><i class="fa-solid fa-shower"></i> Private bathroom with shower</li>
+                <li><i class="fa-solid fa-couch"></i> Sofa bed and loft mattresses</li>
+                <li><i class="fa-solid fa-tree"></i> Private outdoor seating</li>
+              </ul>
+              <button class="button card-button" onclick="openBooking('b3')">Check Availability & Book</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="gallery-heading reveal">
+          <div>
+            <p class="section-label">Atmosphere</p>
+            <h2>Mountain days, cozy nights, and summer pool moments.</h2>
+          </div>
+          <a href="https://www.instagram.com/dhourshweirbungalows/" target="_blank" rel="noopener noreferrer" class="button outline"><i class="fa-brands fa-instagram"></i> More on Instagram</a>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item large reveal"><img src="assets/gallery/pines.jpg" alt="Pine trees around DhourShweirBungalows" /><figcaption>Pine forest setting</figcaption></figure>
+          <figure class="gallery-item reveal delay-1"><img src="assets/gallery/winter.jpg" alt="Winter cabin atmosphere" /><figcaption>Winter wood-heater stays</figcaption></figure>
+          <figure class="gallery-item reveal delay-2"><img src="assets/gallery/summer.jpg" alt="Summer pool and outdoor setting" /><figcaption>Summer pool days</figcaption></figure>
+          <figure class="gallery-item wide reveal"><img src="assets/gallery/bbq.jpg" alt="Outdoor BBQ experience" /><figcaption>Outdoor gatherings</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="booking-section">
+      <div class="container booking-layout">
+        <div class="booking-panel reveal">
+          <p class="section-label">Booking request</p>
+          <h2>Send your request.</h2>
+          <p>At least one contact method is required: WhatsApp phone or email. Your request will be saved and reviewed manually.</p>
+
+          <form id="bookingForm" class="booking-form">
+            <div class="form-row">
+              <label for="bookingType">Booking type *</label>
+              <select id="bookingType" name="bookingType" required>
+                <option value="overnight">24-hour stay</option>
+                <option value="day-use">Day use – strict 8 hours</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="bungalow">Bungalow *</label>
+              <select id="bungalow" name="bungalow" required>
+                <option value="b1">B1 – Cozy & Intimate</option>
+                <option value="b2">B2 – Family-friendly Comfort</option>
+                <option value="b3">B3 – Spacious Luxury</option>
+              </select>
+            </div>
+
+            <div class="form-grid two-cols">
+              <div class="form-row">
+                <label for="guestName">Full name *</label>
+                <input id="guestName" name="guestName" type="text" required placeholder="Your full name" />
+              </div>
+              <div class="form-row">
+                <label for="guests">Number of guests *</label>
+                <input id="guests" name="guests" type="number" min="1" max="6" value="2" required />
+              </div>
+            </div>
+
+            <div class="form-grid two-cols">
+              <div class="form-row">
+                <label for="phone">WhatsApp phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="Example: +961 03 868418" />
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" />
+              </div>
+            </div>
+            <p class="small-help">Please enter at least one: WhatsApp phone or email.</p>
+
+            <div id="overnightFields" class="date-fields">
+              <div class="form-grid two-cols">
+                <div class="form-row">
+                  <label for="checkInDate">Check-in date *</label>
+                  <input id="checkInDate" name="checkInDate" type="date" />
+                </div>
+                <div class="form-row">
+                  <label for="checkOutDate">Check-out date *</label>
+                  <input id="checkOutDate" name="checkOutDate" type="date" />
+                </div>
+              </div>
+            </div>
+
+            <div id="dayUseFields" class="date-fields hidden">
+              <div class="form-grid two-cols">
+                <div class="form-row">
+                  <label for="dayUseDate">Day-use date *</label>
+                  <input id="dayUseDate" name="dayUseDate" type="date" />
+                </div>
+                <div class="form-row">
+                  <label for="preferredStartTime">Preferred start time *</label>
+                  <input id="preferredStartTime" name="preferredStartTime" type="time" />
+                </div>
+              </div>
+              <p class="small-help">Day use is strictly 8 hours only. Exact arrival and exit time will be confirmed with you.</p>
+            </div>
+
+            <div class="form-row">
+              <label for="notes">Notes</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Arrival preference, special occasion, questions, etc."></textarea>
+            </div>
+
+            <div class="price-summary" id="priceSummary">
+              <div>
+                <span>Estimated total</span>
+                <strong id="estimatedTotal">$100</strong>
+              </div>
+              <p id="summaryText">B1 – Cozy & Intimate, 24-hour stay, 1 period.</p>
+            </div>
+
+            <div class="payment-note">
+              <h3><i class="fa-solid fa-money-bill-transfer"></i> Payment by Whish</h3>
+              <p>Bookings are confirmed only after the full amount is transferred by Whish to <strong>+961 03 868418</strong>.</p>
+              <p>Please send a screenshot of the transfer on WhatsApp after payment.</p>
+            </div>
+
+            <button type="submit" class="button primary submit-button">Submit Booking Request</button>
+            <p id="formStatus" class="form-status" role="status"></p>
+          </form>
+        </div>
+
+        <aside class="availability-panel reveal delay-1">
+          <p class="section-label">Availability calendars</p>
+          <h2>Check before requesting.</h2>
+          <p>Use the buttons below to view each bungalow’s calendar. The booking request still requires manual confirmation.</p>
+          <div class="calendar-buttons">
+            <button class="calendar-button active" data-calendar="b1">B1</button>
+            <button class="calendar-button" data-calendar="b2">B2</button>
+            <button class="calendar-button" data-calendar="b3">B3</button>
+          </div>
+          <div class="calendar-wrap">
+            <div id="b1-calendar" class="google-calendar active">
+              <iframe title="B1 availability calendar" src="https://calendar.google.com/calendar/embed?src=563d09112927d9b6229b1419a474148508bd893e3d1daa55aee2212689329124%40group.calendar.google.com&ctz=Asia%2FBeirut&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div id="b2-calendar" class="google-calendar">
+              <iframe title="B2 availability calendar" src="https://calendar.google.com/calendar/embed?src=3f18889928c836068b501c3f9eb5a323c330e115ac5c159d714093e632fd8f91%40group.calendar.google.com&ctz=Asia%2FBeirut&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div id="b3-calendar" class="google-calendar">
+              <iframe title="B3 availability calendar" src="https://calendar.google.com/calendar/embed?src=b5f983597b1e3de014ed836b61d8cd23435c907634d3f2d6a210efe12669422a%40group.calendar.google.com&ctz=Asia%2FBeirut&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0" frameborder="0" scrolling="no"></iframe>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="amenities" class="amenities-section">
+      <div class="container amenities-grid">
+        <div class="reveal">
+          <p class="section-label">Included</p>
+          <h2>What each bungalow includes.</h2>
+        </div>
+        <div class="amenity-cards reveal delay-1">
+          <div class="amenity-card"><i class="fa-solid fa-shower"></i><span>Private bathroom with shower</span></div>
+          <div class="amenity-card"><i class="fa-solid fa-couch"></i><span>Sofa bed and loft mattresses</span></div>
+          <div class="amenity-card"><i class="fa-solid fa-snowflake"></i><span>AC with heating and cooling</span></div>
+          <div class="amenity-card"><i class="fa-solid fa-tv"></i><span>TV, storage cabinet, and desk</span></div>
+          <div class="amenity-card"><i class="fa-solid fa-mug-hot"></i><span>Fridge, kettle, plates, cups, and cutlery</span></div>
+          <div class="amenity-card"><i class="fa-solid fa-chair"></i><span>Outdoor seating and lounging chairs</span></div>
+        </div>
+        <div class="not-included reveal delay-2">
+          <h3>Important notes</h3>
+          <ul>
+            <li>Food is not provided. Guests can bring what they need.</li>
+            <li>No stovetop and no cooking utensils are provided.</li>
+            <li>Towels and toiletries are not provided.</li>
+            <li>Firewood is available in winter for $10 per bag.</li>
+            <li>B3 private pool is available in summer only.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="section-label">Contact</p>
+          <h2>Questions before booking?</h2>
+          <p>Reach us on WhatsApp or Instagram. You can also use the map link to find the exact location.</p>
+        </div>
+        <div class="contact-cards reveal delay-1">
+          <a class="contact-card" href="https://wa.me/9613868418" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i><span>+961 03 868418</span></a>
+          <a class="contact-card" href="https://wa.me/9613763181" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i><span>+961 03 763181</span></a>
+          <a class="contact-card" href="https://www.instagram.com/dhourshweirbungalows/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i><span>@dhourshweirbungalows</span></a>
+          <a class="contact-card" href="https://maps.app.goo.gl/mXEbMeeeDYu9TwZK7" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot"></i><span>View on Google Maps</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 DhourShweirBungalows. All rights reserved.</p>
+      <p>Dhour El Shweir, Mount Lebanon, Lebanon</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
