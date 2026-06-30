@@ -38,7 +38,7 @@ Upload the full contents of this folder to the root of your repository:
 
 ### Day use, strict 8 hours only
 
-- B1: $100 / 8 hours
+- B1: $70 / 8 hours
 - B2: $110 / 8 hours
 - B3: $150 / 8 hours
 
